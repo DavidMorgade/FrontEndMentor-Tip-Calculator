@@ -19,11 +19,15 @@
 .calculator {
     background-color: v.$white;
     padding: 2rem;
+    width: 100%;
+    border-radius: 2rem;
     
 
     &__text {
         color: v.$darkGrayCyan;
         font-weight: bold;
+        margin: 0;
+        padding: 1rem 0;
     }
     &__input {
         background-color: v.$veryLightGray;
@@ -37,5 +41,31 @@
         background-repeat: no-repeat;
         background-position: center left 5%;
         margin-bottom: 1rem;
+        color: v.$secondary;
+        font-weight: bold;
+        font-family: v.$firstFont;
+    }
+    &__percents {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        width: 100%;
+        gap: 2rem;
+    }
+    &__btn {
+        width: 90%;
+        height: 100%;
+        place-self: center;
+        text-align: center;
+        background-color: v.$secondary;
+        color: v.$white;
+        border-radius: 0.5rem;
+        font-weight: bold;
+        font-size: 2rem;
+        padding: 3px 0;
+
+        &--mod {
+            background-color: v.$veryLightGray;
+        }
     }
 }
