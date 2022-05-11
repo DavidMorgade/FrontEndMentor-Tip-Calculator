@@ -1,5 +1,5 @@
 // Fuentes
-$firstFont: 'Epilogue', sans-serif;
+$firstFont: 'Space Mono', monospace;
 
 // Tamaño de Media Queries
 $phone: 480px;
@@ -8,8 +8,11 @@ $desktop: 1024px;
 $desktopXl: 1568px;
 
 // Colores
-$primary: #f46669;
-$secondary: #c7c57d;
+$primary: hsl(172, 67%, 45%);
+$secondary: hsl(183, 100%, 15%);
 $black: #000;
 $white: #FFFFFF;
 $gray: 	#585757;
+$darkGrayCyan: hsl(186, 14%, 43%);
+$lightGrayCyan: hsl(185, 41%, 84%);
+$veryLightGray: hsl(189, 41%, 97%);
