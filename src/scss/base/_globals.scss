@@ -12,6 +12,9 @@ html {
 input {
     font-size: 2.4rem;
 }
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
 body {
     font-family: v.$firstFont;
     font-size: 1.8rem;
