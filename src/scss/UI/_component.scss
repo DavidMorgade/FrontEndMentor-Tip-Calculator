@@ -14,6 +14,9 @@
         letter-spacing: 1rem;
         line-height: 1.5;
         font-weight: bold;
+        @include m.tablet {
+            margin-bottom: 5rem;
+        }
     }
 }
 .calculator {
@@ -69,6 +72,7 @@
         padding: 3px 0;
         cursor: pointer;
         &:hover {
+            transition: all 0.5s;
             background-color: v.$lightGrayCyan;
             color: v.$secondary;;
         }
@@ -130,7 +134,54 @@
         font-weight: bold;
         color: v.$secondary;
         &:hover {
+            transition: all 0.5s;
             background-color: v.$lightGrayCyan;
+        }
+    }
+    @include m.tablet {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+        height: 60%;
+        padding: 3rem 3rem;
+        &__display {
+            padding: 5rem 5rem;
+        }
+        &__inputs {
+            padding-left: 5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+        &__percents {
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            width: 90%;
+            gap: 2rem;
+        }
+        &__btn {
+            width: 90%;
+        }
+        &__amount {
+            margin-bottom: 1rem;
+        }
+        &__person span {
+            margin: 0;
+
+        }
+        &__display {
+            justify-content: flex-start;
+            margin-top: 0;
+        }
+        &__reset {
+            margin-top: auto;
+        }
+        &__prize {
+            font-size: 5rem;
+        }
+        &__text {
+            margin: 0;
+            padding: 0;
         }
     }
 }
