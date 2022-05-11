@@ -1,0 +1,41 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.main {
+    height: 100vh;
+    background-color: v.$lightGrayCyan;
+    &__heading {
+        text-align: center;
+        margin: 0;
+        padding: 4rem;
+        text-transform: uppercase;
+        color: v.$darkGrayCyan;
+        font-size: 2.4rem;
+        letter-spacing: 1rem;
+        line-height: 1.5;
+        font-weight: bold;
+    }
+}
+.calculator {
+    background-color: v.$white;
+    padding: 2rem;
+    
+
+    &__text {
+        color: v.$darkGrayCyan;
+        font-weight: bold;
+    }
+    &__input {
+        background-color: v.$veryLightGray;
+        border: none;
+        text-align: right;
+        appearance: textfield;
+        padding: 1rem;
+        width: 100%;
+        border-radius: 1rem;
+        background-image: url(../img/icon-dollar.svg);
+        background-repeat: no-repeat;
+        background-position: center left 5%;
+        margin-bottom: 1rem;
+    }
+}
