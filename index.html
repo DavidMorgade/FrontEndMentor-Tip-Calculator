@@ -25,7 +25,7 @@
           <button value="15" class="calculator__btn">15%</button>
           <button value="25" class="calculator__btn">25%</button>
           <button value="50" class="calculator__btn">50%</button>
-          <input placeholder="Custom" type="number" class="calculator__btn calculator__btn--mod">
+          <input id="tipinput" placeholder="Custom" type="number" class="calculator__btn calculator__btn--mod">
         </div>
         <p id="calcfail" class="calculator__text">Number of People</p>
         <input placeholder="0" id="ppl" min="1" class="calculator__input calculator__input--ppl" type="number">
@@ -33,12 +33,14 @@
       <div class="calculator__display">
         <div class="calculator__amount">
           <p class="calculator__person">Tip Amount <span>/ person</span></p>
-          <div id="tipcont">          
+          <div id="tipcont">
+            <p class="calculator__prize">$0.00</p>      
           </div>
         </div>
         <div class="calculator__amount">
           <p class="calculator__person">Total<span>/ person</span></p>
           <div id="perscont">
+            <p class="calculator__prize">$0.00</p>   
           </div>
         </div>
         <button class="calculator__reset">Reset</button>

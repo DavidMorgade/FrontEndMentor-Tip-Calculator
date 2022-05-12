@@ -53,15 +53,23 @@
         color: v.$secondary;
         font-weight: bold;
         font-family: v.$firstFont;
+        border: 2px solid transparent;
         cursor: pointer;
+        &:hover {
+            background-color: v.$veryLightGray;
+            border: 2px solid v.$primary;
+        }
         &--ppl {
             background-image: url(../img/icon-person.svg);
+            
+            
         }
     }
     &__percents {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
+        gap: 2rem;
         width: 100%;
     }
     &__btn {
@@ -95,8 +103,6 @@
             padding: 5px 0;
             &:hover {
                 background-color: v.$veryLightGray;
-
-
                 border: 2px solid v.$primary;
             }
 
