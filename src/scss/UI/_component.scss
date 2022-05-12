@@ -32,6 +32,11 @@
         margin: 0;
         padding: 1rem 0rem;
         margin-bottom: 1rem;
+        
+        span {
+            color: rgb(250, 153, 153);
+            padding-left: 5rem;
+        }
     }
     &__input {
         background-color: v.$veryLightGray;
@@ -48,6 +53,7 @@
         color: v.$secondary;
         font-weight: bold;
         font-family: v.$firstFont;
+        cursor: pointer;
         &--ppl {
             background-image: url(../img/icon-person.svg);
         }
@@ -57,7 +63,6 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(3, 1fr);
         width: 100%;
-        gap: 2rem;
     }
     &__btn {
         width: 95%;
@@ -69,21 +74,30 @@
         border-radius: 0.5rem;
         font-weight: bold;
         font-size: 2rem;
-        padding: 3px 0;
+        padding: 3px 0.5rem;
         cursor: pointer;
         &:hover {
             transition: all 0.5s;
             background-color: v.$lightGrayCyan;
             color: v.$secondary;;
         }
+        &--selected {
+            background-color: v.$primary;
+            transition: background-color 0.2s;
+            
+        }
 
         &--mod {
             background-color: v.$veryLightGray;
             color: v.$secondary;
             appearance: textfield;
-            cursor: default;
+            border: 2px solid transparent ;
+            padding: 5px 0;
             &:hover {
                 background-color: v.$veryLightGray;
+
+
+                border: 2px solid v.$primary;
             }
 
         }
@@ -142,7 +156,8 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 4rem;
-        height: 60%;
+        height: 50rem;
+        width: 90rem;
         padding: 3rem 3rem;
         &__display {
             padding: 5rem 5rem;
@@ -160,7 +175,7 @@
             gap: 2rem;
         }
         &__btn {
-            width: 90%;
+            width: 100%;
         }
         &__amount {
             margin-bottom: 1rem;
