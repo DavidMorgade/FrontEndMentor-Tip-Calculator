@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="build/css/app.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="build/img/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Tip calculator app</title>
+</head>
+<body>
+  <main class="main">
+    <h1 class="main__heading">spli<br>tter</h1>
+    <div class="calculator container">
+      <div class="calculator__inputs">
+        <p class="calculator__text">Bill</p>
+        <input placeholder="0"  id="bill" min="1" class="calculator__input" type="number">
+        <p class="calculator__text">Select Tip %</p>
+        <div class="calculator__percents">
+          <button value="5" class="calculator__btn">5%</button>
+          <button value="10" class="calculator__btn">10%</button>
+          <button value="15" class="calculator__btn">15%</button>
+          <button value="25" class="calculator__btn">25%</button>
+          <button value="50" class="calculator__btn">50%</button>
+          <input id="tipinput" placeholder="Custom" type="number" class="calculator__btn calculator__btn--mod">
+        </div>
+        <p id="calcfail" class="calculator__text">Number of People</p>
+        <input placeholder="0" id="ppl" min="1" class="calculator__input calculator__input--ppl" type="number">
+      </div>
+      <div class="calculator__display">
+        <div class="calculator__amount">
+          <p class="calculator__person">Tip Amount <span>/ person</span></p>
+          <div id="tipcont">
+            <p class="calculator__prize">$0.00</p>      
+          </div>
+        </div>
+        <div class="calculator__amount">
+          <p class="calculator__person">Total<span>/ person</span></p>
+          <div id="perscont">
+            <p class="calculator__prize">$0.00</p>   
+          </div>
+        </div>
+        <button class="calculator__reset">Reset</button>
+      </div>
+    </div>
+  </main>
+  <script src="build/js/app.js"></script>
+</body>
+</html>
